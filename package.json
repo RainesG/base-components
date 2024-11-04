@@ -1,6 +1,6 @@
 {
-  "name": "base-components",
-  "version": "1.0.0",
+  "name": "raines-basic-components",
+  "version": "1.1.0",
   "description": "basic components",
   "author": "RainesG",
   "license": "MIT",
@@ -21,10 +21,11 @@
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "release": "standard-version"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^18.2.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -63,6 +64,7 @@
   "dependencies": {
     "classnames": "^2.5.1",
     "sass": "^1.80.6",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "standard-version": "^9.5.0"
   }
 }

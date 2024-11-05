@@ -1,5 +1,5 @@
 import React from "react";
-export interface IImage {
+interface ImageItemType {
     width: number;
     height: number;
     filename: string;
@@ -12,10 +12,11 @@ export interface IImage {
     delete: string;
     page: string;
 }
-export interface IImageList {
-    imageList: IImage[];
+export interface ImageListType {
+    imageList: ImageItemType[];
     marginTop?: boolean;
     row?: number;
     gap?: number | string;
 }
-export declare const ImageList: ({ imageList, marginTop, row, gap, }: IImageList) => React.JSX.Element;
+export declare const ImageList: ({ imageList, marginTop, row, gap, }: ImageListType) => React.JSX.Element;
+export {};

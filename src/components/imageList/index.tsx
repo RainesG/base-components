@@ -4,7 +4,7 @@ import React from "react";
 
 const baseClass = `imageList`;
 
-export interface IImage {
+interface ImageItemType {
   width: number;
   height: number;
   filename: string;
@@ -18,8 +18,8 @@ export interface IImage {
   page: string;
 }
 
-export interface IImageList {
-  imageList: IImage[];
+export interface ImageListType {
+  imageList: ImageItemType[];
   marginTop?: boolean;
   row?: number;
   gap?: number | string;
@@ -30,7 +30,7 @@ export const ImageList = ({
   marginTop = true,
   row = 4,
   gap = "1rem",
-}: IImageList) => {
+}: ImageListType) => {
   return (
     <div
       className={classNames(styles[baseClass], {

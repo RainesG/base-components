@@ -7,5 +7,4 @@ export interface ButtonType {
     linkDestination?: string;
     disableElevation?: boolean;
 }
-declare const Button: React.ForwardRefExoticComponent<React.HTMLAttributes<HTMLButtonElement | HTMLAnchorElement> & ButtonType & React.RefAttributes<unknown>>;
-export default Button;
+export declare const Button: React.ForwardRefExoticComponent<React.HTMLAttributes<HTMLButtonElement | HTMLAnchorElement> & ButtonType & React.RefAttributes<unknown>>;

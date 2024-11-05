@@ -39,5 +39,34 @@ var Button = forwardRef(function (_ref, ref) {
   }, label || 'BUTTON'));
 });
 
-export { Button };
+var styles$1 = {"imageList":"_1EXsP","imageList_imageWrapper":"_3xySV","imageList_marginTop":"_L-Xqv"};
+
+var baseClass$1 = "imageList";
+var ImageList = function ImageList(_ref) {
+  var _classNames;
+  var imageList = _ref.imageList,
+    _ref$marginTop = _ref.marginTop,
+    marginTop = _ref$marginTop === void 0 ? true : _ref$marginTop,
+    _ref$row = _ref.row,
+    row = _ref$row === void 0 ? 4 : _ref$row,
+    _ref$gap = _ref.gap,
+    gap = _ref$gap === void 0 ? "1rem" : _ref$gap;
+  return React.createElement("div", {
+    className: classNames(styles$1[baseClass$1], (_classNames = {}, _classNames[styles$1[baseClass$1 + "_marginTop"]] = marginTop, _classNames))
+  }, imageList.map(function (_ref2, index) {
+    var url = _ref2.url;
+    return React.createElement("div", {
+      key: baseClass$1 + "-" + index,
+      className: styles$1[baseClass$1 + "_imageWrapper"],
+      style: {
+        width: "calc((100% - " + gap + " * (" + row + " - 1)) / " + row + ")"
+      }
+    }, React.createElement("img", {
+      src: url,
+      alt: ""
+    }));
+  }));
+};
+
+export { Button, ImageList };
 //# sourceMappingURL=index.modern.js.map

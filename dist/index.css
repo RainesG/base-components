@@ -36,3 +36,17 @@
   color: rgba(0, 0, 0, 0.26);
   pointer-events: none;
 }
+._1EXsP {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+._3xySV {
+  min-width: 20%;
+}
+._3xySV img {
+  width: 100%;
+}
+._L-Xqv {
+  margin-top: 30px;
+}

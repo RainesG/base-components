@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.2](https://github.com/RainesG/base-components/compare/v1.3.1...v1.3.2) (2024-11-05)
+
+
+### Bug Fixes
+
+* **image list:** add type export ([9444562](https://github.com/RainesG/base-components/commit/944456240c87c7f1fca678f459a08187ede79500))
+
 ### [1.3.1](https://github.com/RainesG/base-components/compare/v1.3.0...v1.3.1) (2024-11-05)
 
 ## [1.3.0](https://github.com/RainesG/base-components/compare/v1.2.3...v1.3.0) (2024-11-05)

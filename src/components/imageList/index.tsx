@@ -4,7 +4,7 @@ import React from "react";
 
 const baseClass = `imageList`;
 
-interface ImageItemType {
+export interface ImageItemType {
   width: number;
   height: number;
   filename: string;

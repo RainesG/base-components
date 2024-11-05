@@ -4,7 +4,7 @@ var React = require('react');
 var React__default = _interopDefault(React);
 var classNames = _interopDefault(require('classnames'));
 
-var styles = {"button":"_2B2gl","button_default":"_3KIZ1","button_primary":"_MQlCH","button_secondary":"_20b5_","button_disabled":"_2MhER"};
+var styles = {"button":"_38F6g","button_default":"_2j-u-","button_primary":"_XE-fq","button_secondary":"_3t1wu","button_disabled":"_1AWSr"};
 
 var baseClass = "button";
 var Button = React.forwardRef(function (_ref, ref) {

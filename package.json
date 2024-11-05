@@ -12,6 +12,8 @@
     "node": ">=10"
   },
   "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "prepare": "run-s build",
@@ -24,10 +26,30 @@
     "deploy": "gh-pages -d example/build",
     "release": "standard-version"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "plugin:storybook/recommended"
+    ]
+  },
   "peerDependencies": {
     "react": "^18.2.0"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^8.3.5",
+    "@storybook/addon-interactions": "^8.3.5",
+    "@storybook/addon-links": "^8.3.5",
+    "@storybook/addon-onboarding": "^8.3.5",
+    "@storybook/blocks": "^8.3.5",
+    "@storybook/preset-create-react-app": "^8.3.5",
+    "@storybook/react": "^8.4.1",
+    "@storybook/react-webpack5": "^8.3.5",
+    "@storybook/test": "^8.3.5",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -55,16 +77,21 @@
     "prettier": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1",
-    "typescript": "^3.2.1"
+    "react-scripts": "^5.0.1",
+    "typescript": "^4.9.3"
   },
   "files": [
     "dist"
   ],
   "dependencies": {
+    "@chromatic-com/storybook": "^3.2.2",
     "classnames": "^2.5.1",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-normalize": "^13.0.1",
+    "postcss-preset-env": "^10.0.9",
     "sass": "^1.80.6",
     "scss": "^0.2.4",
-    "standard-version": "^9.5.0"
+    "standard-version": "^9.5.0",
+    "storybook": "^8.4.1"
   }
 }

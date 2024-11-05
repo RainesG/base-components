@@ -14,7 +14,7 @@ export interface ButtonType {
 
 const baseClass = `button`
 
-const Button = forwardRef(
+export const Button = forwardRef(
   (
     {
       label,
@@ -67,4 +67,3 @@ const Button = forwardRef(
   }
 )
 
-export default Button

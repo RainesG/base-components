@@ -6,9 +6,8 @@
 
 ## Install
 
-```bash
-npm install --save base-components
-```
+````bash
+npm i raines-basic-components```
 
 ## Usage
 
@@ -23,7 +22,7 @@ class Example extends Component {
     return <MyComponent />
   }
 }
-```
+````
 
 ## License
 

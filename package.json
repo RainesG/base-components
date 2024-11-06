@@ -22,10 +22,10 @@
     "test:lint": "eslint .",
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
-    "predeploy": "cd example && npm install && npm run build",
+    "predeploy": "cd example && pnpm install && pnpm run build",
     "deploy": "gh-pages -d example/build",
     "release": "standard-version",
-    "publish": "standard-version && npm publish"
+    "publish": "standard-version && pnpm publish"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",

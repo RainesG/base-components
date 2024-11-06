@@ -1,0 +1,29 @@
+.upload {
+  box-shadow: 0 0 7px 2px #d4d4d4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  color: #112d4e;
+  background-color: #dbe2ef;
+  position: relative;
+
+  input {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  &_textContent {
+    position: absolute;
+    height: 1.3rem;
+    top: calc(50% - .65rem);
+    pointer-events: none;
+  }
+}
+
+.marginTop {
+  margin-top: 30px;
+}

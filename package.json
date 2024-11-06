@@ -25,7 +25,7 @@
     "predeploy": "cd example && pnpm install && pnpm run build",
     "deploy": "gh-pages -d example/build",
     "release": "standard-version",
-    "publish": "standard-version && pnpm publish"
+    "publish": "pnpm publish"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",

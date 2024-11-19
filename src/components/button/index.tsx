@@ -33,13 +33,15 @@ export const Button = forwardRef(
         {type == 'link' ? (
           <a
             href={linkDestination}
-            className={classNames(
-              styles[`${baseClass}`],
-              { [styles[`${baseClass}_primary`]]: variant == 'contained' }
-            )}
+            className={classNames(styles[`${baseClass}`], {
+              [styles[`${baseClass}_primary`]]: variant == 'contained'
+            })}
             style={{
               borderRadius: borderRadius || 5,
-              boxShadow: disableElevation ? 'unset' : undefined
+              boxShadow:
+                disableElevation || variant == 'text' ? 'unset' : undefined,
+              background: variant == 'text' ? 'transparent' : '',
+              color: variant == 'text' ? 'black' : 'unset'
             }}
             ref={ref as RefObject<HTMLAnchorElement>}
           >
@@ -49,7 +51,10 @@ export const Button = forwardRef(
           <button
             style={{
               borderRadius: borderRadius || 5,
-              boxShadow: disableElevation ? 'unset' : undefined
+              boxShadow:
+                disableElevation || variant == 'text' ? 'unset' : undefined,
+              background: variant == 'text' ? 'transparent' : '',
+              color: variant == 'text' ? 'black' : ''
             }}
             disabled={type == 'disabled'}
             className={classNames(
@@ -66,4 +71,3 @@ export const Button = forwardRef(
     )
   }
 )
-

@@ -1,0 +1,9 @@
+.tab {
+  display: flex;
+  justify-content: space-between;
+
+  &_item {
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+}

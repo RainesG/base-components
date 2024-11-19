@@ -1,0 +1,92 @@
+.bulletScreen {
+  overflow: hidden;
+
+  &_wrapper {
+    display: flex;
+    width: fit-content;
+    // animation-play-state: paused;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+
+  @keyframes marqueeLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes marqueeRight {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes marqueeUp {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+  }
+
+  @keyframes marqueeDown {
+    0% {
+      transform: translateY(-50%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  &_left {
+    animation: marqueeLeft linear infinite;
+  }
+
+  &_right {
+    animation: marqueeRight linear infinite;
+  }
+
+  &_up {
+    animation: marqueeUp linear infinite;
+  }
+
+  &_down {
+    animation: marqueeDown linear infinite;
+  }
+
+  &_bulletsGroup {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &_bullets {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+  }
+
+  &_avatar {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  &_text {
+    white-space: nowrap;
+  }
+}
